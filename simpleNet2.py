@@ -86,6 +86,14 @@ def myNetwork():
     net.addLink(s14, h8, **linkopts)
     net.addLink(s13, h6, **linkopts)
 
+    # Part2 (50points)
+    # You can explore the following potential options that could help you in this task:
+    # (a) Update the topology by adding some links between nodes (i.e., strengthen the connectivity). You can add up to three links (i.e., budget restrictions)
+
+    net.addlink(h4, s2, **linkopts)
+    net.addlink(h4, s7, **linkopts)
+    net.addlink(h4, s9, **linkopts)
+
     info( '*** Starting network\n')
     net.build()
     info( '*** Starting controllers\n')
@@ -94,7 +102,6 @@ def myNetwork():
 
     info( '*** Starting switches\n')
     s1.start([c0])
-    s2.start([c0])
     s3.start([c0])
     s4.start([c0])
     s5.start([c0])
@@ -138,18 +145,18 @@ def myNetwork():
     #ping -w option
     #This option sets the required running Time window value in second
 
-        #h.cmdPrint('ping -w 90', server.IP(), # CHANGED: -w 20 => -w 40
-        #         '>', outfiles[ h ],
-        #         '2>', errfiles[ h ]
-        #         )
+        h.cmdPrint('ping -w 90', server.IP(), # CHANGED: -w 20 => -w 40
+                 '>', outfiles[ h ],
+                 '2>', errfiles[ h ]
+                 )
 
-        server.cmdPrint('iperf -s -u -p 5566 -i 10',
-                       '>', outfiles[ h ],
-                       '2>', errfiles[ h ],
-                       '&' )
-        bandwidth=6
-        running_time=100
-        h.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (server.IP(),bandwidth, running_time))
+        #server.cmdPrint('iperf -s -u -p 5566 -i 10',
+        #               '>', outfiles[ h ],
+        #               '2>', errfiles[ h ],
+        #               '&' )
+        #bandwidth=6
+        #running_time=100
+        #h.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (server.IP(),bandwidth, running_time))
 
     #CLI(net)
     net.stop()
