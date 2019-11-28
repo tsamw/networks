@@ -68,11 +68,11 @@ def myNetwork():
 
     net.addLink(s1, h1, **linkopts)
     net.addLink(s1, s2, **linkopts)
-    net.addLink(s1, s4, **linkopts)
     net.addLink(s2, s3, **linkopts)
     net.addLink(s3, s5, **linkopts)
     net.addLink(s5, s6, **linkopts)
     net.addLink(s6, h2, **linkopts)
+    net.addLink(s1, s4, **linkopts)
     net.addLink(s2, s7, **linkopts)
     net.addLink(s7, s8, **linkopts)
     net.addLink(s8, h3, **linkopts)
