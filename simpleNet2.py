@@ -30,8 +30,6 @@ def myNetwork():
                       protocol='tcp',
                       port=6633)
 
-    #print("Going to sleep for 10 seconds")
-    #time.sleep(10)
     #c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
     #net.addController(c0)
 
@@ -110,8 +108,6 @@ def myNetwork():
     s13.start([c0])
     s14.start([c0])
 
-    #CLI(net) # Opens up mininet terminal, use to run 'pingall'
-
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
     server = hosts[ 6 ] # host[0] is h2
@@ -142,7 +138,6 @@ def myNetwork():
     #ping -w option
     #This option sets the required running Time window value in second
 
-        # Commented out call to 'ping' utility
         h.cmdPrint('ping -w 90', server.IP(), # CHANGED: -w 20 => -w 40
                  '>', outfiles[ h ],
                  '2>', errfiles[ h ]
