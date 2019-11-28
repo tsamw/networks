@@ -15,7 +15,6 @@ from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 from mininet.link import TCLink, Intf
 from subprocess import call
-import time
 
 def myNetwork():
 
@@ -31,36 +30,15 @@ def myNetwork():
                       protocol='tcp',
                       port=6633)
 
-    #print("Going to sleep for 10 seconds")
-    #time.sleep(10)
     #c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
     #net.addController(c0)
 
     info( '*** Add switches\n')
     s1 = net.addSwitch('s1', cls=OVSKernelSwitch)
-    s2 = net.addSwitch('s2', cls=OVSKernelSwitch)
-    s3 = net.addSwitch('s3', cls=OVSKernelSwitch)
-    s4 = net.addSwitch('s4', cls=OVSKernelSwitch)
-    s5 = net.addSwitch('s5', cls=OVSKernelSwitch)
-    s6 = net.addSwitch('s6', cls=OVSKernelSwitch)
-    s7 = net.addSwitch('s7', cls=OVSKernelSwitch)
-    s8 = net.addSwitch('s8', cls=OVSKernelSwitch)
-    s9 = net.addSwitch('s9', cls=OVSKernelSwitch)
-    s10 = net.addSwitch('s10', cls=OVSKernelSwitch)
-    s11 = net.addSwitch('s11', cls=OVSKernelSwitch)
-    s12 = net.addSwitch('s12', cls=OVSKernelSwitch)
-    s13 = net.addSwitch('s13', cls=OVSKernelSwitch)
-    s14 = net.addSwitch('s14', cls=OVSKernelSwitch)
 
     info( '*** Add hosts\n')
     h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
     h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
-    h3 = net.addHost('h3', cls=Host, ip='10.0.0.3', defaultRoute=None)
-    h4 = net.addHost('h4', cls=Host, ip='10.0.0.4', defaultRoute=None)
-    h5 = net.addHost('h5', cls=Host, ip='10.0.0.5', defaultRoute=None)
-    h6 = net.addHost('h6', cls=Host, ip='10.0.0.6', defaultRoute=None)
-    h7 = net.addHost('h7', cls=Host, ip='10.0.0.7', defaultRoute=None)
-    h8 = net.addHost('h8', cls=Host, ip='10.0.0.8', defaultRoute=None)
 
     info( '*** Add links\n')
     #adds a bidirectional link with bandwidth, delay and loss characteristics,
@@ -68,26 +46,7 @@ def myNetwork():
     linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000, use_htb=True)
 
     net.addLink(s1, h1, **linkopts)
-    net.addLink(s1, s2, **linkopts)
-    net.addLink(s2, s3, **linkopts)
-    net.addLink(s3, s5, **linkopts)
-    net.addLink(s5, s6, **linkopts)
-    net.addLink(s6, h2, **linkopts)
-    net.addLink(s1, s4, **linkopts)
-    net.addLink(s2, s7, **linkopts)
-    net.addLink(s7, s8, **linkopts)
-    net.addLink(s8, h3, **linkopts)
-    net.addLink(s7, s9, **linkopts)
-    net.addLink(s9, s10, **linkopts)
-    net.addLink(s10, s11, **linkopts)
-    net.addLink(s11, s12, **linkopts)
-    net.addLink(s12, h4, **linkopts)
-    net.addLink(s10, h5, **linkopts)
-    net.addLink(s9, s13, **linkopts)
-    net.addLink(s13, s14, **linkopts)
-    net.addLink(s14, h7, **linkopts)
-    net.addLink(s14, h8, **linkopts)
-    net.addLink(s13, h6, **linkopts)
+    net.addLink(s1, h2, **linkopts)
 
     info( '*** Starting network\n')
     net.build()
@@ -97,25 +56,10 @@ def myNetwork():
 
     info( '*** Starting switches\n')
     net.get('s1').start([c0])
-    net.get('s2').start([c0])
-    net.get('s3').start([c0])
-    net.get('s4').start([c0])
-    net.get('s5').start([c0])
-    net.get('s6').start([c0])
-    net.get('s7').start([c0])
-    net.get('s8').start([c0])
-    net.get('s9').start([c0])
-    net.get('s10').start([c0])
-    net.get('s11').start([c0])
-    net.get('s12').start([c0])
-    net.get('s13').start([c0])
-    net.get('s14').start([c0])
-
-    #CLI(net) # Opens up mininet terminal, use to run 'pingall'
 
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
-    server = hosts[ 6 ] # host[0] is h2
+    server = hosts[ 0 ]
     outfiles, capfiles, errfiles = {}, {}, {}
 
     for h in hosts:
@@ -125,13 +69,13 @@ def myNetwork():
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
     newHosts = {hosts[ 1 ]}
-    h7 = {hosts[ 6 ]} # set h1 as a ping sender, i.e., client
+    h2 = {hosts[ 0 ]} # set h1 as a ping sender, i.e., client
     h1 = {hosts[ 1 ]}
 
-    serverHost = {hosts [ 6 ]}
+    serverHost = {hosts [ 0 ]}
 
     for h in serverHost:
-        h.cmdPrint('tcpdump -n -i h7-eth0',
+        h.cmdPrint('tcpdump -n -i h2-eth0',
                  '>', capfiles[ h ],
                  '2>', errfiles[ h ],
                  '&' )
@@ -142,20 +86,18 @@ def myNetwork():
     for h in newHosts:
     #ping -w option
     #This option sets the required running Time window value in second
+        h.cmdPrint('ping -w 20', server.IP(),
+                 '>', outfiles[ h ],
+                 '2>', errfiles[ h ]
+                 )
 
-        # Commented out call to 'ping' utility
-        #h.cmdPrint('ping -w 80', server.IP(), # CHANGED: -w 20 => -w 40
-        #         '>', outfiles[ h ],
-        #         '2>', errfiles[ h ]
-        #         )
-
-        server.cmdPrint('iperf -s -u -p 5566 -i 10',
-                       '>', outfiles[ h ],
-                       '2>', errfiles[ h ],
-                       '&' )
-        bandwidth=6
-        running_time=100
-        h.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (server.IP(),bandwidth, running_time))
+        #server.cmdPrint('iperf -s -u -p 5566 -i 10',
+     #                  '>', outfiles[ h1 ],
+     #                  '2>', errfiles[ h1 ],
+     #                  '&' )
+    # bandwidth=6
+    # running_time=100
+    # src.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (des.IP(),bandwidth, running_time)
 
     #CLI(net)
     net.stop()
