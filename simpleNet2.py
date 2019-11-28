@@ -3,6 +3,7 @@
 # Author: Yaser Al Mtawa
 # This code is for ilustrating purposes for Western Univserity, Course 4457. The students of this course can freely re-use it as long as they keep this description.
 
+
 #!/usr/bin/python
 
 from mininet.net import Mininet
@@ -30,6 +31,8 @@ def myNetwork():
                       protocol='tcp',
                       port=6633)
 
+    #print("Going to sleep for 10 seconds")
+    #time.sleep(10)
     #c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
     #net.addController(c0)
 
@@ -85,14 +88,10 @@ def myNetwork():
     net.addLink(s14, h7, **linkopts)
     net.addLink(s14, h8, **linkopts)
     net.addLink(s13, h6, **linkopts)
-
-    # Part2 (50points)
-    # You can explore the following potential options that could help you in this task:
-    # (a) Update the topology by adding some links between nodes (i.e., strengthen the connectivity). You can add up to three links (i.e., budget restrictions)
-
-    net.addlink(h4, s2, **linkopts)
-    net.addlink(h4, s7, **linkopts)
-    net.addlink(h4, s9, **linkopts)
+    # Adding 3 links to improve network survivability
+    net.addLink(h7, s2, **linkopts)
+    net.addLink(h7, s10, **linkopts)
+    net.addLink(h7, s13, **linkopts)
 
     info( '*** Starting network\n')
     net.build()
@@ -101,19 +100,22 @@ def myNetwork():
         controller.start()
 
     info( '*** Starting switches\n')
-    s1.start([c0])
-    s3.start([c0])
-    s4.start([c0])
-    s5.start([c0])
-    s6.start([c0])
-    s7.start([c0])
-    s8.start([c0])
-    s9.start([c0])
-    s10.start([c0])
-    s11.start([c0])
-    s12.start([c0])
-    s13.start([c0])
-    s14.start([c0])
+    net.get('s1').start([c0])
+    net.get('s2').start([c0])
+    net.get('s3').start([c0])
+    net.get('s4').start([c0])
+    net.get('s5').start([c0])
+    net.get('s6').start([c0])
+    net.get('s7').start([c0])
+    net.get('s8').start([c0])
+    net.get('s9').start([c0])
+    net.get('s10').start([c0])
+    net.get('s11').start([c0])
+    net.get('s12').start([c0])
+    net.get('s13').start([c0])
+    net.get('s14').start([c0])
+
+    #CLI(net) # Opens up mininet terminal, use to run 'pingall'
 
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
@@ -127,8 +129,8 @@ def myNetwork():
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
     newHosts = {hosts[ 1 ]}
-    h7 = {hosts[ 1 ]} # set h1 as a ping sender, i.e., client
-    h1 = {hosts[ 6 ]}
+    h7 = {hosts[ 6 ]} # set h1 as a ping sender, i.e., client
+    h1 = {hosts[ 1 ]}
 
     serverHost = {hosts [ 6 ]}
 
@@ -145,7 +147,8 @@ def myNetwork():
     #ping -w option
     #This option sets the required running Time window value in second
 
-        h.cmdPrint('ping -w 90', server.IP(), # CHANGED: -w 20 => -w 40
+        # Commented out call to 'ping' utility
+        h.cmdPrint('ping -w 80', server.IP(), # CHANGED: -w 20 => -w 40
                  '>', outfiles[ h ],
                  '2>', errfiles[ h ]
                  )
