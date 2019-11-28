@@ -1,7 +1,7 @@
 # This Python script sends a ping packet flow from h1 to h2 nodes in an SDN network that contains only two hosts (i.e., h1 and h2), one switch (s1), and one controller.
 # Tcpdump is used to sniff the packets at h2-eth0 interface. This script is part of a large project to measure the performance metrics of large-scale network.
 # Author: Yaser Al Mtawa
-# This code is for ilustrating purposes for Western Univserity, Course 4457. The students of this course can freely re-use it as long as they keep this description.
+# This code is for ilustrating purposes for Western Univserity, Course 4457. The students of this course can freely re-use it as long as they keep this description. 
 
 
 #!/usr/bin/python
@@ -20,8 +20,8 @@ def myNetwork():
 
     net = Mininet( topo=None,
                    build=False,
-                   ipBase='10.0.0.0/8',
-                   host=CPULimitedHost,
+                   ipBase='10.0.0.0/8', 
+                   host=CPULimitedHost, 
                    link=TCLink)
 
     info( '*** Adding controller\n' )
@@ -41,9 +41,9 @@ def myNetwork():
     h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
 
     info( '*** Add links\n')
-    #adds a bidirectional link with bandwidth, delay and loss characteristics,
+    #adds a bidirectional link with bandwidth, delay and loss characteristics, 
     #with a maximum queue size of 1000 packets using the Hierarchical Token Bucket rate limiter
-    linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000, use_htb=True)
+    linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000, use_htb=True) 
 
     net.addLink(s1, h1, **linkopts)
     net.addLink(s1, h2, **linkopts)
@@ -67,12 +67,12 @@ def myNetwork():
         outfiles[ h ] = './simpleNet/out/%s.out' % h.name # to store the output of ping command for client to server
         capfiles[ h ] = './simpleNet/cap/%s.txt' % h.name #cap file to store the output of tcpdump command
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
-
-    newHosts = {hosts[ 1 ]}
+       
+    newHosts = {hosts[ 1 ]} 
     h2 = {hosts[ 0 ]} # set h1 as a ping sender, i.e., client
-    h1 = {hosts[ 1 ]}
+    h1 = {hosts[ 1 ]} 
 
-    serverHost = {hosts [ 0 ]}
+    serverHost = {hosts [ 0 ]} 
 
     for h in serverHost:
         h.cmdPrint('tcpdump -n -i h2-eth0',
@@ -80,7 +80,7 @@ def myNetwork():
                  '2>', errfiles[ h ],
                  '&' )
 
-
+    
     print('IP address of the server is %s', server.IP())
 
     for h in newHosts:
@@ -105,3 +105,4 @@ def myNetwork():
 if __name__ == '__main__':
     setLogLevel( 'info' )
     myNetwork()
+
