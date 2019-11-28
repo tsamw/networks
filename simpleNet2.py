@@ -120,8 +120,8 @@ def myNetwork():
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
     newHosts = {hosts[ 1 ]}
-    h7 = {hosts[ 6 ]} # set h1 as a ping sender, i.e., client
-    h1 = {hosts[ 1 ]}
+    h7 = {hosts[ 1 ]} # set h1 as a ping sender, i.e., client
+    h1 = {hosts[ 6 ]}
 
     serverHost = {hosts [ 6 ]}
 
