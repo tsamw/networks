@@ -110,7 +110,7 @@ def myNetwork():
 
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
-    server = hosts[ 5 ]
+    server = hosts[ 6 ]
     outfiles, capfiles, errfiles = {}, {}, {}
 
     for h in hosts:
@@ -120,10 +120,10 @@ def myNetwork():
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
     newHosts = {hosts[ 1 ]}
-    h7 = {hosts[ 5 ]} # set h1 as a ping sender, i.e., client
+    h7 = {hosts[ 6 ]} # set h1 as a ping sender, i.e., client
     h1 = {hosts[ 1 ]}
 
-    serverHost = {hosts [ 5 ]}
+    serverHost = {hosts [ 6 ]}
 
     for h in serverHost:
         h.cmdPrint('tcpdump -n -i h7-eth0',
