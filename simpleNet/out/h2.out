@@ -4,5 +4,5 @@ From 10.0.0.2 icmp_seq=2 Destination Host Unreachable
 From 10.0.0.2 icmp_seq=3 Destination Host Unreachable
 
 --- 10.0.0.7 ping statistics ---
-4 packets transmitted, 0 received, +3 errors, 100% packet loss, time 3046ms
+4 packets transmitted, 0 received, +3 errors, 100% packet loss, time 3058ms
 pipe 4
