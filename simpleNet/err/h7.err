@@ -1,6 +1,6 @@
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on h7-eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 tcpdump: pcap_loop: The interface went down
-328 packets captured
-328 packets received by filter
+49030 packets captured
+49030 packets received by filter
 0 packets dropped by kernel
