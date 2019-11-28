@@ -15,6 +15,7 @@ from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 from mininet.link import TCLink, Intf
 from subprocess import call
+import time
 
 def myNetwork():
 
@@ -25,54 +26,145 @@ def myNetwork():
                    link=TCLink)
 
     info( '*** Adding controller\n' )
-    c0=net.addController(name='c0',
-                      controller=Controller,
-                      protocol='tcp',
-                      port=6633)
+    #c0=net.addController(name='c0',
+                      #controller=Controller,
+                      #protocol='tcp',
+                      #port=6633)
 
-    #c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
-    #net.addController(c0)
+    c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
+    net.addController(c0)
 
     info( '*** Add switches\n')
-    s1 = net.addSwitch('s1', cls=OVSKernelSwitch)
+    s1 = net.addSwitch('s1', cls=OVSKernelSwitch, stp=True)
+    s2 = net.addSwitch('s2', cls=OVSKernelSwitch, stp=True)
+    s3 = net.addSwitch('s3', cls=OVSKernelSwitch, stp=True)
+    s4 = net.addSwitch('s4', cls=OVSKernelSwitch, stp=True)
+    s5 = net.addSwitch('s5', cls=OVSKernelSwitch, stp=True)
+    s6 = net.addSwitch('s6', cls=OVSKernelSwitch, stp=True)
+    s7 = net.addSwitch('s7', cls=OVSKernelSwitch, stp=True)
+    s8 = net.addSwitch('s8', cls=OVSKernelSwitch, stp=True)
+    s9 = net.addSwitch('s9', cls=OVSKernelSwitch, stp=True)
+    s10 = net.addSwitch('s10', cls=OVSKernelSwitch, stp=True)
+    s11 = net.addSwitch('s11', cls=OVSKernelSwitch, stp=True)
+    s12 = net.addSwitch('s12', cls=OVSKernelSwitch, stp=True)
+    s13 = net.addSwitch('s13', cls=OVSKernelSwitch, stp=True)
+    s14 = net.addSwitch('s14', cls=OVSKernelSwitch, stp=True)
 
     info( '*** Add hosts\n')
-    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
     h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
+    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
+    h3 = net.addHost('h3', cls=Host, ip='10.0.0.3', defaultRoute=None)
+    h4 = net.addHost('h4', cls=Host, ip='10.0.0.4', defaultRoute=None)
+    h5 = net.addHost('h5', cls=Host, ip='10.0.0.5', defaultRoute=None)
+    h6 = net.addHost('h6', cls=Host, ip='10.0.0.6', defaultRoute=None)
+    h7 = net.addHost('h7', cls=Host, ip='10.0.0.7', defaultRoute=None)
+    h8 = net.addHost('h8', cls=Host, ip='10.0.0.8', defaultRoute=None)
 
     info( '*** Add links\n')
     #adds a bidirectional link with bandwidth, delay and loss characteristics,
     #with a maximum queue size of 1000 packets using the Hierarchical Token Bucket rate limiter
-    linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000, use_htb=True)
+    linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000)
+
+    net.addLink(h1, s1, **linkopts)
+    net.addLink(s1, s2, **linkopts)
+    net.addLink(s2, s3, **linkopts)
+    net.addLink(s3, s5, **linkopts)
+    net.addLink(s5, s6, **linkopts)
+    net.addLink(s6, h2, **linkopts)
+    net.addLink(s1, s4, **linkopts)
+    net.addLink(s2, s7, **linkopts)
+    net.addLink(s7, s8, **linkopts)
+    net.addLink(s8, h3, **linkopts)
+    net.addLink(s7, s9, **linkopts)
+    net.addLink(s9, s10, **linkopts)
+    net.addLink(s10, s11, **linkopts)
+    net.addLink(s11, s12, **linkopts)
+    net.addLink(s12, h4, **linkopts)
+    net.addLink(s10, h5, **linkopts)
+    net.addLink(s9, s13, **linkopts)
+    net.addLink(s13, s14, **linkopts)
+    net.addLink(s13, h6, **linkopts)
+    net.addLink(s14, h8, **linkopts)
+    net.addLink(s14, h7, **linkopts)
+
 
     net.addLink(s1, h1, **linkopts)
-    net.addLink(s1, h2, **linkopts)
+    net.addLink(s2, s1, **linkopts)
+    net.addLink(s3, s2, **linkopts)
+    net.addLink(s5, s3, **linkopts)
+    net.addLink(s6, s5, **linkopts)
+    net.addLink(h2, s6, **linkopts)
+    net.addLink(s4, s1, **linkopts)
+    net.addLink(s7, s2, **linkopts)
+    net.addLink(s8, s7, **linkopts)
+    net.addLink(h3, s8, **linkopts)
+    net.addLink(s9, s7, **linkopts)
+    net.addLink(s10, s9, **linkopts)
+    net.addLink(s11, s10, **linkopts)
+    net.addLink(s12, s11, **linkopts)
+    net.addLink(h4, s12, **linkopts)
+    net.addLink(h5, s10, **linkopts)
+    net.addLink(s13, s9, **linkopts)
+    net.addLink(s14, s13, **linkopts)
+    net.addLink(h6, s13, **linkopts)
+    net.addLink(h8, s14, **linkopts)
+    net.addLink(h7, s14, **linkopts)
 
     info( '*** Starting network\n')
     net.build()
+#slow down python script for floodlight to catch up
+    #time.sleep(3)
     info( '*** Starting controllers\n')
     for controller in net.controllers:
         controller.start()
 
     info( '*** Starting switches\n')
-    net.get('s1').start([c0])
+    #net.get('s1').start([c0])
+    s1.start([c0])
+    s2.start([c0])
+    s3.start([c0])
+    s4.start([c0])
+    s5.start([c0])
+    s6.start([c0])
+    s7.start([c0])
+    s8.start([c0])
+    s9.start([c0])
+    s10.start([c0])
+    s11.start([c0])
+    s12.start([c0])
+    s13.start([c0])
+    s14.start([c0])
+    #net.get('s2').start([c0])
+#    net.get('s3').start([c0])
+#    net.get('s4').start([c0])
+#    net.get('s5').start([c0])
+#    net.get('s6').start([c0])
+#    net.get('s7').start([c0])
+#    net.get('s8').start([c0])
+#    net.get('s9').start([c0])
+#    net.get('s10').start([c0])
+#    net.get('s11').start([c0])
+ #   net.get('s12').start([c0])
+ #   net.get('s13').start([c0])
+ #   net.get('s14').start([c0])
+
+    #time.sleep(3)
 
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
-    server = hosts[ 0 ]
+    server = hosts[ 6 ]
     outfiles, capfiles, errfiles = {}, {}, {}
 
     for h in hosts:
-        #h.cmdPrint('IP address of', h) #, h.name.IP())
+        #h.cmdPrint('IP address of', h, h.name.IP())
         outfiles[ h ] = './simpleNet/out/%s.out' % h.name # to store the output of ping command for client to server
         capfiles[ h ] = './simpleNet/cap/%s.txt' % h.name #cap file to store the output of tcpdump command
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
-    newHosts = {hosts[ 1 ]}
-    h2 = {hosts[ 0 ]} # set h1 as a ping sender, i.e., client
-    h1 = {hosts[ 1 ]}
-
-    serverHost = {hosts [ 0 ]}
+    newHosts = {hosts[ 0 ]}
+   # h2 = {hosts[ 6 ]} #set h1 as a ping sender, i.e., client
+   # h1 = {hosts[ 1 ]}
+    serverHost = {hosts [ 6 ]}
 
     for h in serverHost:
         h.cmdPrint('tcpdump -n -i h2-eth0',
@@ -86,20 +178,20 @@ def myNetwork():
     for h in newHosts:
     #ping -w option
     #This option sets the required running Time window value in second
-        h.cmdPrint('ping -w 20', server.IP(),
+        h.cmdPrint('ping -w 90', server.IP(),
                  '>', outfiles[ h ],
                  '2>', errfiles[ h ]
                  )
 
-        #server.cmdPrint('iperf -s -u -p 5566 -i 10',
-     #                  '>', outfiles[ h1 ],
-     #                  '2>', errfiles[ h1 ],
+     #   h.cmdPrint('iperf -s -u -p 5566 -i 10',
+     #                  '>', outfiles[ h ],
+     #                  '2>', errfiles[ h ],
      #                  '&' )
-    # bandwidth=6
-    # running_time=100
-    # src.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (des.IP(),bandwidth, running_time)
+    #bandwidth=6
+    #running_time=100
+    #h.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (server.IP(),bandwidth, running_time)
 
-    #CLI(net)
+    #CLI( net )
     net.stop()
 
 if __name__ == '__main__':
