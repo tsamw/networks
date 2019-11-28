@@ -4,15 +4,15 @@
 # The special thing in this version is that the average is taken over each set of ping (i.e., in every iteration) ===> packet-based latency
 # This version process_SDN2.sh deals with only the ping command of h1 (the sender/the client).
 # Author: Yaser Al Mtawa
-# This code is for ilustrating purposes for Western Univserity, Course 4457. The students of this course can freely re-use it as long as they keep this description. 
+# This code is for ilustrating purposes for Western Univserity, Course 4457. The students of this course can freely re-use it as long as they keep this description.
 
 
 #!/bin/bash
 
 _numberOfIterations=$(seq 1 1 10)
 
-_homedir=/home/yaser/mininet/ToStudents
-_savedir_=/home/yaser/mininet/ToStudents/simpleNet/out
+_homedir=/home/sam/Documents/networks
+_savedir_=/home/sam/Documents/networks/simpleNet/out
 
 
 
@@ -36,16 +36,16 @@ function function_0 {
 
 function function_A {
 
-for _numberOfIteration in ${_numberOfIterations[@]} 
+for _numberOfIteration in ${_numberOfIterations[@]}
 do
 
                 cd $_homedir
-                
-		
-	
+
+
+
                  sudo python ./simpleNet2.py
 
-               
+
                 cd $_savedir_
                 sudo chmod 777 $_savedir_
                 cp h1.out $_savedir"/h1_"$_numberOfIteration".out"
@@ -54,11 +54,11 @@ do
 
                 sudo mn -c
                 cd $_savedir
-                
+
                 strings "h1_"$_numberOfIteration".out" | grep -i time= | awk '{print $7}' | cut -d= -f2 > $_savedir_level2"/h1_"$_numberOfIteration".out"
-            
+
                 cd $_savedir_level2
-               
+
 
 done
 } # end function A
@@ -79,15 +79,15 @@ stop=`cat h1_1.out | wc -l`
 while true; do
 total=0.0
 
-  for _numberOfIteration in ${_numberOfIterations[@]} 
-  do      
+  for _numberOfIteration in ${_numberOfIterations[@]}
+  do
 
                 strings "h1_"$_numberOfIteration".out" | perl -ne "$count..$count and print" >> "Final_h1_"$count".out"
                 echo "Inside for loop 1"
                 f=`strings "h1_"$_numberOfIteration".out" | perl -ne "$count..$count and print"`
                 echo "f"
                 echo "$f"
-               
+
                 total=$(awk '{print $1+$2}' <<<"$total $f")
 
                 echo "total = "
@@ -110,26 +110,24 @@ total=0.0
     echo "count > stop"
     break
   fi
-           
+
 done
 
 } # end function B
 
 function function_C {
 
-for _numberOfIteration in ${_numberOfIterations[@]} 
+for _numberOfIteration in ${_numberOfIterations[@]}
 do
-         
+
    function_B $_numberOfIteration
-    
- 
+
+
 done
 
 } # end function C
 
 function_0
 function_A
-function_B 
+function_B
 #function_C
-
-
