@@ -15,7 +15,6 @@ from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 from mininet.link import TCLink, Intf
 from subprocess import call
-import time
 
 def myNetwork():
 
@@ -31,8 +30,6 @@ def myNetwork():
                       protocol='tcp',
                       port=6633)
 
-    #print("Going to sleep for 10 seconds")
-    #time.sleep(10)
     #c0 = RemoteController( 'c0', protocol='tcp', port= 6653) # this is for external Floodlight controller
     #net.addController(c0)
 
@@ -53,8 +50,8 @@ def myNetwork():
     s14 = net.addSwitch('s14', cls=OVSKernelSwitch)
 
     info( '*** Add hosts\n')
-    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
     h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
+    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
     h3 = net.addHost('h3', cls=Host, ip='10.0.0.3', defaultRoute=None)
     h4 = net.addHost('h4', cls=Host, ip='10.0.0.4', defaultRoute=None)
     h5 = net.addHost('h5', cls=Host, ip='10.0.0.5', defaultRoute=None)
@@ -68,12 +65,12 @@ def myNetwork():
     linkopts = dict(bw=15, delay='1ms', loss=1, max_queue_size=1000, use_htb=True)
 
     net.addLink(s1, h1, **linkopts)
-    net.addLink(s1, s2, **linkopts)
+    net.addLink(s1, h2, **linkopts)
+    net.addLink(s1, s4, **linkopts)
     net.addLink(s2, s3, **linkopts)
     net.addLink(s3, s5, **linkopts)
     net.addLink(s5, s6, **linkopts)
     net.addLink(s6, h2, **linkopts)
-    net.addLink(s1, s4, **linkopts)
     net.addLink(s2, s7, **linkopts)
     net.addLink(s7, s8, **linkopts)
     net.addLink(s8, h3, **linkopts)
@@ -111,11 +108,9 @@ def myNetwork():
     net.get('s13').start([c0])
     net.get('s14').start([c0])
 
-    #CLI(net) # Opens up mininet terminal, use to run 'pingall'
-
     info( '*** Post configure switches and hosts\n')
     hosts = net.hosts
-    server = hosts[ 6 ] # host[0] is h2
+    server = hosts[ 5 ]
     outfiles, capfiles, errfiles = {}, {}, {}
 
     for h in hosts:
@@ -125,10 +120,10 @@ def myNetwork():
         errfiles[ h ] = './simpleNet/err/%s.err' % h.name
 
     newHosts = {hosts[ 1 ]}
-    h7 = {hosts[ 6 ]} # set h1 as a ping sender, i.e., client
+    h7 = {hosts[ 5 ]} # set h1 as a ping sender, i.e., client
     h1 = {hosts[ 1 ]}
 
-    serverHost = {hosts [ 6 ]}
+    serverHost = {hosts [ 5 ]}
 
     for h in serverHost:
         h.cmdPrint('tcpdump -n -i h7-eth0',
@@ -143,19 +138,22 @@ def myNetwork():
     #ping -w option
     #This option sets the required running Time window value in second
 
-        # Commented out call to 'ping' utility
-        #h.cmdPrint('ping -w 80', server.IP(), # CHANGED: -w 20 => -w 40
-        #         '>', outfiles[ h ],
-        #         '2>', errfiles[ h ]
-        #         )
+    #The following 'ping' command was utilized to capture the neccesary information for
+    #part1, latency & jitter
+        h.cmdPrint('ping -w 20', server.IP(),
+                 '>', outfiles[ h ],
+                 '2>', errfiles[ h ]
+                 )
 
-        server.cmdPrint('iperf -s -u -p 5566 -i 10',
-                       '>', outfiles[ h ],
-                       '2>', errfiles[ h ],
-                       '&' )
-        bandwidth=6
-        running_time=100
-        h.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (server.IP(),bandwidth, running_time))
+    #After capturing ping and jitter with the 'ping' command above
+    #iPerf was utilized to capture part 1 throughput and packetloss
+        #server.cmdPrint('iperf -s -u -p 5566 -i 10',
+     #                  '>', outfiles[ h ],
+     #                  '2>', errfiles[ h ],
+     #                  '&' )
+    # bandwidth=6
+    # running_time=100
+    # src.cmd('iperf -c %s -u -b %sM -p 5566 -t %s' % (des.IP(),bandwidth, running_time)
 
     #CLI(net)
     net.stop()
