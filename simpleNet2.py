@@ -140,7 +140,7 @@ def myNetwork():
 
     #The following 'ping' command was utilized to capture the neccesary information for
     #part1, latency & jitter
-        h.cmdPrint('ping -w 20', server.IP(),
+        h.cmdPrint('ping -w 90', server.IP(),
                  '>', outfiles[ h ],
                  '2>', errfiles[ h ]
                  )
