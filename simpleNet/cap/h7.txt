@@ -1,0 +1,328 @@
+04:19:24.088468 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::a0b4:34ff:fe79:37ce (146)
+04:19:24.093926 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::14ec:71ff:fe80:6f0d (146)
+04:19:24.246871 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:24.461436 ARP, Request who-has 10.0.0.7 tell 10.0.0.1, length 28
+04:19:24.462738 ARP, Reply 10.0.0.7 is-at 62:7c:7a:52:91:00, length 28
+04:19:24.538336 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 1, length 64
+04:19:24.544001 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 1, length 64
+04:19:24.548441 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 2, length 64
+04:19:24.554029 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 2, length 64
+04:19:24.643384 IP6 fe80::90bc:5bff:fe3b:5abf > ff02::2: ICMP6, router solicitation, length 16
+04:19:24.668952 IP6 fe80::4896:d3ff:feeb:f6aa.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::4896:d3ff:feeb:f6aa (146)
+04:19:24.685152 IP6 fe80::1899:c4ff:fe57:24bd.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::1899:c4ff:fe57:24bd (146)
+04:19:24.847749 IP6 fe80::d897:57ff:fe4d:eeb8 > ff02::2: ICMP6, router solicitation, length 16
+04:19:24.870471 IP6 fe80::4896:d3ff:feeb:f6aa > ff02::2: ICMP6, router solicitation, length 16
+04:19:24.893378 IP6 fe80::d897:57ff:fe4d:eeb8.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::d897:57ff:fe4d:eeb8 (146)
+04:19:24.918431 IP6 fe80::1899:c4ff:fe57:24bd > ff02::2: ICMP6, router solicitation, length 16
+04:19:24.938637 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:24.962473 IP6 fe80::9cf4:34ff:fef3:de8c > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.018366 IP6 fe80::acbf:cff:fe83:fc7b > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.048672 IP6 fe80::acbf:cff:fe83:fc7b.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::acbf:cff:fe83:fc7b (146)
+04:19:25.078990 IP6 fe80::681c:55ff:fe66:4d3c.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::681c:55ff:fe66:4d3c (146)
+04:19:25.108287 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:25.135194 IP6 fe80::18ff:6bff:fee9:d7da.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::18ff:6bff:fee9:d7da (146)
+04:19:25.163302 IP6 fe80::5d:54ff:fe71:bae6.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::5d:54ff:fe71:bae6 (146)
+04:19:25.188580 IP6 fe80::18ff:6bff:fee9:d7da > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.213474 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::5cc5:92ff:fe69:fa1a (146)
+04:19:25.233521 IP6 fe80::88b1:c2ff:fe60:742c.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::88b1:c2ff:fe60:742c (146)
+04:19:25.249065 IP6 fe80::88b1:c2ff:fe60:742c > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.305561 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:25.323260 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:25.346613 IP6 fe80::681c:55ff:fe66:4d3c > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.368831 IP6 fe80::5cc5:92ff:fe69:fa1a > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.393507 IP6 fe80::5d:54ff:fe71:bae6 > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.413523 IP6 fe80::7043:2aff:fea4:10d3 > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.433562 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 3, length 64
+04:19:25.437922 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 3, length 64
+04:19:25.442150 IP6 fe80::c5:25ff:fe4f:a2e0 > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.468195 IP6 fe80::48e6:6eff:fef1:20e7 > ff02::2: ICMP6, router solicitation, length 16
+04:19:25.698786 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::2006:61ff:fe25:29be (146)
+04:19:25.909283 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::3815:7aff:fe31:60e (146)
+04:19:26.079126 IP6 fe80::3815:7aff:fe31:60e > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.103506 IP6 fe80::2006:61ff:fe25:29be > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.157079 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::a0b4:34ff:fe79:37ce (146)
+04:19:26.161719 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::14ec:71ff:fe80:6f0d (146)
+04:19:26.319219 IP6 fe80::a0b4:34ff:fe79:37ce > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.323875 IP6 fe80::14ec:71ff:fe80:6f0d > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.338531 IP6 fe80::20cc:cdff:fe93:607e > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.351729 IP6 fe80::c498:bbff:fe17:8c5c > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.371573 IP6 fe80::1cc8:8ff:fe98:7877 > ff02::2: ICMP6, router solicitation, length 16
+04:19:26.433292 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 4, length 64
+04:19:26.438232 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 4, length 64
+04:19:27.413182 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 5, length 64
+04:19:27.414564 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 5, length 64
+04:19:27.788243 IP6 fe80::4896:d3ff:feeb:f6aa.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:27.798032 IP6 fe80::1899:c4ff:fe57:24bd.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:27.835511 IP6 fe80::47e:9eff:fe48:d6c1.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:27.972664 IP6 fe80::d897:57ff:fe4d:eeb8.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.053181 IP6 fe80::acbf:cff:fe83:fc7b.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.168576 IP6 fe80::18ff:6bff:fee9:d7da.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.188800 IP6 fe80::88b1:c2ff:fe60:742c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.213689 IP6 fe80::5d:54ff:fe71:bae6.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.247118 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:28.438685 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 6, length 64
+04:19:28.440208 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 6, length 64
+04:19:28.814049 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:29.052577 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:29.301580 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:29.306673 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:29.439514 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 7, length 64
+04:19:29.440934 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 7, length 64
+04:19:29.647338 ARP, Request who-has 10.0.0.1 tell 10.0.0.7, length 28
+04:19:29.718211 ARP, Reply 10.0.0.1 is-at 92:bc:5b:3b:5a:bf, length 28
+04:19:30.440047 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 8, length 64
+04:19:30.441111 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 8, length 64
+04:19:31.442171 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 9, length 64
+04:19:31.443410 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 9, length 64
+04:19:31.747964 IP6 fe80::90bc:5bff:fe3b:5abf > ff02::2: ICMP6, router solicitation, length 16
+04:19:31.991431 IP6 fe80::acbf:cff:fe83:fc7b > ff02::2: ICMP6, router solicitation, length 16
+04:19:32.442242 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 10, length 64
+04:19:32.443570 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 10, length 64
+04:19:32.518695 IP6 fe80::d897:57ff:fe4d:eeb8 > ff02::2: ICMP6, router solicitation, length 16
+04:19:32.543363 IP6 fe80::1899:c4ff:fe57:24bd > ff02::2: ICMP6, router solicitation, length 16
+04:19:32.558410 IP6 fe80::47e:9eff:fe48:d6c1 > ff02::2: ICMP6, router solicitation, length 16
+04:19:32.572145 IP6 fe80::88b1:c2ff:fe60:742c > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.033248 IP6 fe80::18ff:6bff:fee9:d7da > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.053286 IP6 fe80::4896:d3ff:feeb:f6aa > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.073330 IP6 fe80::c5:25ff:fe4f:a2e0 > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.277957 IP6 fe80::7043:2aff:fea4:10d3 > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.303102 IP6 fe80::48e6:6eff:fef1:20e7 > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.444474 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 11, length 64
+04:19:33.445537 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 11, length 64
+04:19:33.576990 IP6 fe80::5d:54ff:fe71:bae6 > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.764862 IP6 fe80::681c:55ff:fe66:4d3c > ff02::2: ICMP6, router solicitation, length 16
+04:19:33.773743 IP6 fe80::5cc5:92ff:fe69:fa1a > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.004551 IP6 fe80::20cc:cdff:fe93:607e > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.008946 IP6 fe80::14ec:71ff:fe80:6f0d > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.269175 IP6 fe80::c498:bbff:fe17:8c5c > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.273827 IP6 fe80::3815:7aff:fe31:60e > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.445154 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 12, length 64
+04:19:34.446469 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 12, length 64
+04:19:34.511671 IP6 fe80::a0b4:34ff:fe79:37ce > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.548520 IP6 fe80::2006:61ff:fe25:29be > ff02::2: ICMP6, router solicitation, length 16
+04:19:34.767032 IP6 fe80::607c:7aff:fe52:9100 > ff02::2: ICMP6, router solicitation, length 16
+04:19:35.033098 IP6 fe80::742e:fdff:fe10:ee05 > ff02::2: ICMP6, router solicitation, length 16
+04:19:35.308199 IP6 fe80::1cc8:8ff:fe98:7877 > ff02::2: ICMP6, router solicitation, length 16
+04:19:35.446658 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 13, length 64
+04:19:35.447772 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 13, length 64
+04:19:35.783367 IP6 fe80::4896:d3ff:feeb:f6aa.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:35.793395 IP6 fe80::1899:c4ff:fe57:24bd.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:35.833952 IP6 fe80::47e:9eff:fe48:d6c1.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:35.972048 IP6 fe80::d897:57ff:fe4d:eeb8.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.057432 IP6 fe80::acbf:cff:fe83:fc7b.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.093163 IP6 fe80::4e9:6aff:feb7:284e > ff02::2: ICMP6, router solicitation, length 16
+04:19:36.138500 IP6 fe80::681c:55ff:fe66:4d3c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.151908 IP6 fe80::18ff:6bff:fee9:d7da.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.208822 IP6 fe80::88b1:c2ff:fe60:742c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.218924 IP6 fe80::5d:54ff:fe71:bae6.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.246428 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:36.448746 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 14, length 64
+04:19:36.450041 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 14, length 64
+04:19:36.812836 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:37.053156 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:37.302471 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:37.308506 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:37.449859 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 15, length 64
+04:19:37.450903 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 15, length 64
+04:19:38.451244 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 16, length 64
+04:19:38.452542 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 16, length 64
+04:19:39.453209 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 17, length 64
+04:19:39.454444 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 17, length 64
+04:19:40.454803 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 18, length 64
+04:19:40.456282 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 18, length 64
+04:19:41.456837 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 19, length 64
+04:19:41.458507 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 19, length 64
+04:19:42.456632 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 20, length 64
+04:19:42.457725 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 20, length 64
+04:19:43.458122 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 21, length 64
+04:19:43.459529 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 21, length 64
+04:19:44.459634 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 22, length 64
+04:19:44.460733 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 22, length 64
+04:19:45.461240 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 23, length 64
+04:19:45.462555 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 23, length 64
+04:19:46.075963 IP6 fe80::90bc:5bff:fe3b:5abf > ff02::2: ICMP6, router solicitation, length 16
+04:19:46.463370 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 24, length 64
+04:19:46.464529 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 24, length 64
+04:19:46.596966 IP6 fe80::acbf:cff:fe83:fc7b > ff02::2: ICMP6, router solicitation, length 16
+04:19:47.368562 IP6 fe80::1899:c4ff:fe57:24bd > ff02::2: ICMP6, router solicitation, length 16
+04:19:47.383712 IP6 fe80::47e:9eff:fe48:d6c1 > ff02::2: ICMP6, router solicitation, length 16
+04:19:47.393681 IP6 fe80::88b1:c2ff:fe60:742c > ff02::2: ICMP6, router solicitation, length 16
+04:19:47.463659 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 25, length 64
+04:19:47.464756 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 25, length 64
+04:19:47.853191 IP6 fe80::d897:57ff:fe4d:eeb8 > ff02::2: ICMP6, router solicitation, length 16
+04:19:48.122039 IP6 fe80::c5:25ff:fe4f:a2e0 > ff02::2: ICMP6, router solicitation, length 16
+04:19:48.464619 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 26, length 64
+04:19:48.465660 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 26, length 64
+04:19:48.596586 IP6 fe80::14ec:71ff:fe80:6f0d > ff02::2: ICMP6, router solicitation, length 16
+04:19:48.637757 IP6 fe80::7043:2aff:fea4:10d3 > ff02::2: ICMP6, router solicitation, length 16
+04:19:48.852822 IP6 fe80::20cc:cdff:fe93:607e > ff02::2: ICMP6, router solicitation, length 16
+04:19:49.408955 IP6 fe80::18ff:6bff:fee9:d7da > ff02::2: ICMP6, router solicitation, length 16
+04:19:49.466471 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 27, length 64
+04:19:49.467622 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 27, length 64
+04:19:49.653226 IP6 fe80::4896:d3ff:feeb:f6aa > ff02::2: ICMP6, router solicitation, length 16
+04:19:49.692072 IP6 fe80::48e6:6eff:fef1:20e7 > ff02::2: ICMP6, router solicitation, length 16
+04:19:50.139421 IP6 fe80::3815:7aff:fe31:60e > ff02::2: ICMP6, router solicitation, length 16
+04:19:50.394806 IP6 fe80::c498:bbff:fe17:8c5c > ff02::2: ICMP6, router solicitation, length 16
+04:19:50.670629 IP6 fe80::2006:61ff:fe25:29be > ff02::2: ICMP6, router solicitation, length 16
+04:19:51.481523 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 29, length 64
+04:19:51.482718 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 29, length 64
+04:19:51.663106 IP6 fe80::607c:7aff:fe52:9100 > ff02::2: ICMP6, router solicitation, length 16
+04:19:51.799077 IP6 fe80::681c:55ff:fe66:4d3c > ff02::2: ICMP6, router solicitation, length 16
+04:19:51.843502 IP6 fe80::5d:54ff:fe71:bae6 > ff02::2: ICMP6, router solicitation, length 16
+04:19:51.882523 IP6 fe80::5cc5:92ff:fe69:fa1a > ff02::2: ICMP6, router solicitation, length 16
+04:19:51.981244 IP6 fe80::4896:d3ff:feeb:f6aa.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.011198 IP6 fe80::1899:c4ff:fe57:24bd.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.032465 IP6 fe80::d897:57ff:fe4d:eeb8.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.049543 IP6 fe80::47e:9eff:fe48:d6c1.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.088863 IP6 fe80::acbf:cff:fe83:fc7b.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.158836 IP6 fe80::681c:55ff:fe66:4d3c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.188320 IP6 fe80::18ff:6bff:fee9:d7da.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.220690 IP6 fe80::88b1:c2ff:fe60:742c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.267878 IP6 fe80::5d:54ff:fe71:bae6.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.282637 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:52.481113 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 30, length 64
+04:19:52.828071 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:53.052713 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:53.302158 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:53.307058 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:19:53.494266 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 31, length 64
+04:19:53.495704 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 31, length 64
+04:19:53.728205 IP6 fe80::742e:fdff:fe10:ee05 > ff02::2: ICMP6, router solicitation, length 16
+04:19:53.768523 IP6 fe80::1cc8:8ff:fe98:7877 > ff02::2: ICMP6, router solicitation, length 16
+04:19:55.514199 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 33, length 64
+04:19:55.517093 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 33, length 64
+04:19:55.553988 ARP, Request who-has 10.0.0.7 tell 10.0.0.1, length 28
+04:19:55.555022 ARP, Reply 10.0.0.7 is-at 62:7c:7a:52:91:00, length 28
+04:19:55.802727 IP6 fe80::4e9:6aff:feb7:284e > ff02::2: ICMP6, router solicitation, length 16
+04:19:56.512011 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 34, length 64
+04:19:56.513314 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 34, length 64
+04:19:57.513976 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 35, length 64
+04:19:57.515322 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 35, length 64
+04:19:58.514931 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 36, length 64
+04:19:58.515979 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 36, length 64
+04:19:59.516252 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 37, length 64
+04:19:59.517294 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 37, length 64
+04:20:00.518296 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 38, length 64
+04:20:00.519587 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 38, length 64
+04:20:01.519337 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 39, length 64
+04:20:01.520565 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 39, length 64
+04:20:02.518510 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 40, length 64
+04:20:02.519588 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 40, length 64
+04:20:03.520168 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 41, length 64
+04:20:03.521284 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 41, length 64
+04:20:04.521534 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 42, length 64
+04:20:04.522623 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 42, length 64
+04:20:05.522714 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 43, length 64
+04:20:05.523939 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 43, length 64
+04:20:05.743438 ARP, Request who-has 10.0.0.1 tell 10.0.0.7, length 28
+04:20:05.760510 ARP, Reply 10.0.0.1 is-at 92:bc:5b:3b:5a:bf, length 28
+04:20:07.542265 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 45, length 64
+04:20:07.543561 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 45, length 64
+04:20:08.543465 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 46, length 64
+04:20:08.544695 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 46, length 64
+04:20:09.545657 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 47, length 64
+04:20:09.546881 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 47, length 64
+04:20:10.547625 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 48, length 64
+04:20:10.548700 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 48, length 64
+04:20:11.548532 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 49, length 64
+04:20:11.549781 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 49, length 64
+04:20:12.550715 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 50, length 64
+04:20:12.551796 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 50, length 64
+04:20:13.553745 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 51, length 64
+04:20:13.555085 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 51, length 64
+04:20:14.551663 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 52, length 64
+04:20:14.552918 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 52, length 64
+04:20:15.553859 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 53, length 64
+04:20:15.554987 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 53, length 64
+04:20:16.322267 IP6 fe80::acbf:cff:fe83:fc7b > ff02::2: ICMP6, router solicitation, length 16
+04:20:16.345204 IP6 fe80::90bc:5bff:fe3b:5abf > ff02::2: ICMP6, router solicitation, length 16
+04:20:16.555179 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 54, length 64
+04:20:16.556255 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 54, length 64
+04:20:17.556508 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 55, length 64
+04:20:17.557631 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 55, length 64
+04:20:18.292882 IP6 fe80::20cc:cdff:fe93:607e > ff02::2: ICMP6, router solicitation, length 16
+04:20:18.348243 IP6 fe80::14ec:71ff:fe80:6f0d > ff02::2: ICMP6, router solicitation, length 16
+04:20:18.446920 IP6 fe80::1899:c4ff:fe57:24bd > ff02::2: ICMP6, router solicitation, length 16
+04:20:18.481927 IP6 fe80::9cf4:34ff:fef3:de8c > ff02::2: ICMP6, router solicitation, length 16
+04:20:18.552382 IP6 fe80::47e:9eff:fe48:d6c1 > ff02::2: ICMP6, router solicitation, length 16
+04:20:18.589964 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 56, length 64
+04:20:18.592855 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 56, length 64
+04:20:18.598039 IP6 fe80::88b1:c2ff:fe60:742c > ff02::2: ICMP6, router solicitation, length 16
+04:20:20.373479 IP6 fe80::d897:57ff:fe4d:eeb8 > ff02::2: ICMP6, router solicitation, length 16
+04:20:20.388769 IP6 fe80::7043:2aff:fea4:10d3 > ff02::2: ICMP6, router solicitation, length 16
+04:20:20.425689 IP6 fe80::c5:25ff:fe4f:a2e0 > ff02::2: ICMP6, router solicitation, length 16
+04:20:20.598021 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 58, length 64
+04:20:20.599280 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 58, length 64
+04:20:21.600262 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 59, length 64
+04:20:21.601519 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 59, length 64
+04:20:22.383113 IP6 fe80::a0b4:34ff:fe79:37ce > ff02::2: ICMP6, router solicitation, length 16
+04:20:22.427230 IP6 fe80::3815:7aff:fe31:60e > ff02::2: ICMP6, router solicitation, length 16
+04:20:22.478319 IP6 fe80::2006:61ff:fe25:29be > ff02::2: ICMP6, router solicitation, length 16
+04:20:22.530026 IP6 fe80::48e6:6eff:fef1:20e7 > ff02::2: ICMP6, router solicitation, length 16
+04:20:22.601252 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 60, length 64
+04:20:22.602782 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 60, length 64
+04:20:23.601859 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 61, length 64
+04:20:23.602964 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 61, length 64
+04:20:23.782644 IP6 fe80::4896:d3ff:feeb:f6aa.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:23.798098 IP6 fe80::1899:c4ff:fe57:24bd.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:23.840402 IP6 fe80::47e:9eff:fe48:d6c1.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:23.977340 IP6 fe80::d897:57ff:fe4d:eeb8.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.057176 IP6 fe80::acbf:cff:fe83:fc7b.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.163760 IP6 fe80::681c:55ff:fe66:4d3c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.226804 IP6 fe80::88b1:c2ff:fe60:742c.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.260622 IP6 fe80::5d:54ff:fe71:bae6.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.276208 IP6 fe80::5cc5:92ff:fe69:fa1a.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:24.448302 IP6 fe80::c498:bbff:fe17:8c5c > ff02::2: ICMP6, router solicitation, length 16
+04:20:24.468490 IP6 fe80::18ff:6bff:fee9:d7da > ff02::2: ICMP6, router solicitation, length 16
+04:20:24.503911 IP6 fe80::4896:d3ff:feeb:f6aa > ff02::2: ICMP6, router solicitation, length 16
+04:20:24.610869 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 62, length 64
+04:20:24.611999 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 62, length 64
+04:20:24.821049 IP6 fe80::2006:61ff:fe25:29be.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:25.055799 IP6 fe80::3815:7aff:fe31:60e.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:25.303905 IP6 fe80::a0b4:34ff:fe79:37ce.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:25.307308 IP6 fe80::14ec:71ff:fe80:6f0d.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+04:20:25.604106 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 63, length 64
+04:20:25.605374 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 63, length 64
+04:20:25.719533 ARP, Request who-has 10.0.0.7 tell 10.0.0.1, length 28
+04:20:25.720581 ARP, Reply 10.0.0.7 is-at 62:7c:7a:52:91:00, length 28
+04:20:26.479245 IP6 fe80::607c:7aff:fe52:9100 > ff02::2: ICMP6, router solicitation, length 16
+04:20:26.586904 IP6 fe80::5d:54ff:fe71:bae6 > ff02::2: ICMP6, router solicitation, length 16
+04:20:26.611495 IP6 fe80::5cc5:92ff:fe69:fa1a > ff02::2: ICMP6, router solicitation, length 16
+04:20:26.612845 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 64, length 64
+04:20:26.616649 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 64, length 64
+04:20:27.606810 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 65, length 64
+04:20:27.607870 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 65, length 64
+04:20:28.540355 IP6 fe80::742e:fdff:fe10:ee05 > ff02::2: ICMP6, router solicitation, length 16
+04:20:28.558325 IP6 fe80::681c:55ff:fe66:4d3c > ff02::2: ICMP6, router solicitation, length 16
+04:20:28.611994 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 66, length 64
+04:20:28.613096 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 66, length 64
+04:20:29.614168 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 67, length 64
+04:20:29.615643 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 67, length 64
+04:20:30.607803 IP6 fe80::1cc8:8ff:fe98:7877 > ff02::2: ICMP6, router solicitation, length 16
+04:20:31.638708 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 69, length 64
+04:20:31.640080 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 69, length 64
+04:20:32.654055 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 70, length 64
+04:20:32.655821 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 70, length 64
+04:20:32.670604 IP6 fe80::4e9:6aff:feb7:284e > ff02::2: ICMP6, router solicitation, length 16
+04:20:33.642466 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 71, length 64
+04:20:33.643734 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 71, length 64
+04:20:34.644700 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 72, length 64
+04:20:34.645960 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 72, length 64
+04:20:35.646780 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 73, length 64
+04:20:35.648154 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 73, length 64
+04:20:36.647929 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 74, length 64
+04:20:36.649068 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 74, length 64
+04:20:37.650019 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 75, length 64
+04:20:37.651147 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 75, length 64
+04:20:38.651379 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 76, length 64
+04:20:38.652471 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 76, length 64
+04:20:39.652772 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 77, length 64
+04:20:39.653876 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 77, length 64
+04:20:40.652896 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 78, length 64
+04:20:40.654258 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 78, length 64
+04:20:40.815407 ARP, Request who-has 10.0.0.1 tell 10.0.0.7, length 28
+04:20:40.834084 ARP, Reply 10.0.0.1 is-at 92:bc:5b:3b:5a:bf, length 28
+04:20:41.654803 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 79, length 64
+04:20:41.656007 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 79, length 64
+04:20:42.655011 IP 10.0.0.1 > 10.0.0.7: ICMP echo request, id 2611, seq 80, length 64
+04:20:42.656259 IP 10.0.0.7 > 10.0.0.1: ICMP echo reply, id 2611, seq 80, length 64

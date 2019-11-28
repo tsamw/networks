@@ -1,0 +1,77 @@
+03:28:23.731930 IP6 :: > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:24.047456 IP6 :: > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:24.079106 IP6 :: > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:24.243349 IP6 :: > ff02::1:ffec:8398: ICMP6, neighbor solicitation, who has fe80::c0ac:bfff:feec:8398, length 32
+03:28:24.367442 IP6 :: > ff02::1:ff52:1306: ICMP6, neighbor solicitation, who has fe80::a861:b5ff:fe52:1306, length 32
+03:28:24.495481 IP6 fe80::d8ba:f7ff:fec5:122c > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:24.495490 IP6 fe80::d8ba:f7ff:fec5:122c > ff02::2: ICMP6, router solicitation, length 16
+03:28:24.531662 ARP, Request who-has 10.0.0.2 tell 10.0.0.1, length 28
+03:28:24.532889 ARP, Reply 10.0.0.2 is-at da:ba:f7:c5:12:2c, length 28
+03:28:24.553755 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 1, length 64
+03:28:24.554769 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 2, length 64
+03:28:24.554814 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 1, length 64
+03:28:24.556418 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 2, length 64
+03:28:25.103322 IP6 fe80::d8ba:f7ff:fec5:122c > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:25.267926 IP6 fe80::c0ac:bfff:feec:8398 > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:25.269920 IP6 fe80::c0ac:bfff:feec:8398 > ff02::2: ICMP6, router solicitation, length 16
+03:28:25.392004 IP6 fe80::a861:b5ff:fe52:1306 > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:25.392006 IP6 fe80::a861:b5ff:fe52:1306 > ff02::2: ICMP6, router solicitation, length 16
+03:28:25.403281 IP6 fe80::a861:b5ff:fe52:1306 > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:25.493606 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+03:28:25.503780 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] [2n] ANY (QM)? 6.0.3.1.2.5.e.f.f.f.5.b.1.6.8.a.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. ANY (QM)? sam-VirtualBox.local. (158)
+03:28:25.529517 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 3, length 64
+03:28:25.530793 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 3, length 64
+03:28:25.754796 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] [2n] ANY (QM)? 6.0.3.1.2.5.e.f.f.f.5.b.1.6.8.a.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. ANY (QM)? sam-VirtualBox.local. (158)
+03:28:25.940756 IP6 fe80::c0ac:bfff:feec:8398 > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:26.005346 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] [2n] ANY (QM)? 6.0.3.1.2.5.e.f.f.f.5.b.1.6.8.a.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. ANY (QM)? sam-VirtualBox.local. (158)
+03:28:26.031153 IP6 fe80::a861:b5ff:fe52:1306 > ff02::16: HBH ICMP6, multicast listener report v2, 2 group record(s), length 48
+03:28:26.205579 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::a861:b5ff:fe52:1306 (146)
+03:28:26.415376 IP6 fe80::a861:b5ff:fe52:1306 > ff02::16: HBH ICMP6, multicast listener report v2, 1 group record(s), length 28
+03:28:26.494161 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+03:28:26.530931 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 4, length 64
+03:28:26.532204 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 4, length 64
+03:28:27.266181 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::a861:b5ff:fe52:1306 (146)
+03:28:27.532822 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 5, length 64
+03:28:27.534059 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 5, length 64
+03:28:28.399313 IP6 fe80::d8ba:f7ff:fec5:122c > ff02::2: ICMP6, router solicitation, length 16
+03:28:28.495532 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+03:28:28.534105 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 6, length 64
+03:28:28.535385 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 6, length 64
+03:28:29.167424 IP6 fe80::a861:b5ff:fe52:1306 > ff02::2: ICMP6, router solicitation, length 16
+03:28:29.171944 IP6 fe80::c0ac:bfff:feec:8398 > ff02::2: ICMP6, router solicitation, length 16
+03:28:29.327302 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0*- [0q] 2/0/0 (Cache flush) PTR sam-VirtualBox.local., (Cache flush) AAAA fe80::a861:b5ff:fe52:1306 (146)
+03:28:29.534637 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 7, length 64
+03:28:29.536048 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 7, length 64
+03:28:29.679323 ARP, Request who-has 10.0.0.1 tell 10.0.0.2, length 28
+03:28:29.694740 ARP, Reply 10.0.0.1 is-at c2:ac:bf:ec:83:98, length 28
+03:28:30.535944 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 8, length 64
+03:28:30.537144 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 8, length 64
+03:28:31.537730 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 9, length 64
+03:28:31.539081 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 9, length 64
+03:28:32.495383 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+03:28:32.539023 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 10, length 64
+03:28:32.540332 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 10, length 64
+03:28:33.539208 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 11, length 64
+03:28:33.540429 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 11, length 64
+03:28:34.540468 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 12, length 64
+03:28:34.541645 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 12, length 64
+03:28:35.541714 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 13, length 64
+03:28:35.542860 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 13, length 64
+03:28:35.823049 IP6 fe80::d8ba:f7ff:fec5:122c > ff02::2: ICMP6, router solicitation, length 16
+03:28:36.543517 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 14, length 64
+03:28:36.544771 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 14, length 64
+03:28:36.591418 IP6 fe80::a861:b5ff:fe52:1306 > ff02::2: ICMP6, router solicitation, length 16
+03:28:36.852165 IP6 fe80::c0ac:bfff:feec:8398 > ff02::2: ICMP6, router solicitation, length 16
+03:28:37.545841 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 15, length 64
+03:28:37.546990 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 15, length 64
+03:28:38.546034 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 16, length 64
+03:28:38.547286 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 16, length 64
+03:28:39.546995 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 17, length 64
+03:28:39.548109 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 17, length 64
+03:28:40.496060 IP6 fe80::a861:b5ff:fe52:1306.5353 > ff02::fb.5353: 0 [2q] PTR (QM)? _ipps._tcp.local. PTR (QM)? _ipp._tcp.local. (45)
+03:28:40.547074 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 18, length 64
+03:28:40.548147 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 18, length 64
+03:28:41.548505 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 19, length 64
+03:28:41.549838 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 19, length 64
+03:28:42.550828 IP 10.0.0.1 > 10.0.0.2: ICMP echo request, id 3953, seq 20, length 64
+03:28:42.551923 IP 10.0.0.2 > 10.0.0.1: ICMP echo reply, id 3953, seq 20, length 64
