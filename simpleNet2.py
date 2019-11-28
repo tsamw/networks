@@ -52,8 +52,8 @@ def myNetwork():
     s14 = net.addSwitch('s14', cls=OVSKernelSwitch)
 
     info( '*** Add hosts\n')
-    h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
     h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
+    h1 = net.addHost('h1', cls=Host, ip='10.0.0.1', defaultRoute=None)
     h3 = net.addHost('h3', cls=Host, ip='10.0.0.3', defaultRoute=None)
     h4 = net.addHost('h4', cls=Host, ip='10.0.0.4', defaultRoute=None)
     h5 = net.addHost('h5', cls=Host, ip='10.0.0.5', defaultRoute=None)
