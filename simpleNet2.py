@@ -90,8 +90,8 @@ def myNetwork():
     net.addLink(s13, h6, **linkopts)
     # Adding 3 links to improve network survivability
     net.addLink(h7, s2, **linkopts)
-    net.addLink(h7, s10, **linkopts)
-    net.addLink(h7, s13, **linkopts)
+    net.addLink(h7, s7, **linkopts)
+    net.addLink(h7, s9, **linkopts)
 
     info( '*** Starting network\n')
     net.build()
@@ -148,7 +148,7 @@ def myNetwork():
     #This option sets the required running Time window value in second
 
         # Commented out call to 'ping' utility
-        h.cmdPrint('ping -w 80', server.IP(), # CHANGED: -w 20 => -w 40
+        h.cmdPrint('ping -w 90', server.IP(), # CHANGED: -w 20 => -w 40
                  '>', outfiles[ h ],
                  '2>', errfiles[ h ]
                  )
